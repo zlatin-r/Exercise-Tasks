@@ -1,6 +1,6 @@
 import re
 
-s = input()
+
 
 
 
