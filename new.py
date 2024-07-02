@@ -5,4 +5,4 @@ k = input()
 
 matches = re.findall(k, s)
 
-print(matches)
+
