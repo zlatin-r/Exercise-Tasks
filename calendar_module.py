@@ -1,4 +1,5 @@
 import calendar
 
-year, month, day = map(int, input().split())
+month, day, year = map(int, input().split())
 
+result = calendar.weekday(year, month, day)
