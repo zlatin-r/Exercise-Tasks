@@ -3,11 +3,20 @@ class Solution:
         sub_string = ""
         l = 0
 
-        for ch in s:
-            if ch in sub_string:
-                if len(sub_string) > l:
-                    l = len(sub_string)
-                
-                break
-            sub_string += ch
+        for i in range(len(s)):
+            if s[i] in sub_string:
+                sub_string = ""
+            sub_string += s[i]
 
+            if len(sub_string) > l:
+                    l = len(sub_string)
+
+        return l
+    
+result = Solution()
+
+print(result.lengthOfLongestSubstring("dvdf"))
+print(result.lengthOfLongestSubstring(" "))
+print(result.lengthOfLongestSubstring("abcabcabd"))
+print(result.lengthOfLongestSubstring("bbbbbbbb"))
+print(result.lengthOfLongestSubstring("pwwkew"))
