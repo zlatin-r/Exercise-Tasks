@@ -6,10 +6,12 @@ class Solution:
         longest_string = ""
 
         for i in range(len(s)):
-            for b in range(len(s[:i])):
+            for b in range(len(s[i:])):
 
-                sub_string = s[b:i]
-                all_substrings.append(sub_string)
+                sub_string = s[i:b]
+
+                if len(sub_string) == len(set(sub_string)):
+                    all_substrings.append(sub_string)
 
         return max_l, longest_string, all_substrings
     
