@@ -16,8 +16,8 @@ class Solution:
         return max_len
     
 result = Solution()
-print(result.lengthOfLongestSubstring("dvdf"))
 
+print(result.lengthOfLongestSubstring("dvdf"))
 print(result.lengthOfLongestSubstring("abcabcbb"))
 print(result.lengthOfLongestSubstring(" "))
 print(result.lengthOfLongestSubstring("bbbbbbbb"))
